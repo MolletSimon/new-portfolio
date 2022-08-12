@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./src/**/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    colors: {
+      primary: "#925E78",
+    },
     letterSpacing: {
       tightest: "-.075em",
       tighter: "-.05em",
@@ -12,11 +15,11 @@ module.exports = {
       title: "0.14em",
       widest: ".2em",
     },
-    fontSize: {
-      nav: "16px",
-      title: "64px",
-    },
     extend: {
+      fontSize: {
+        nav: "16px",
+        title: "64px",
+      },
       backgroundImage: {
         witw: "url('../public/images/WITW/Home.png')",
         myco: "url('../public/images/MyConnect/Home.png')",
@@ -37,6 +40,29 @@ module.exports = {
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
           "50%": { transform: "rotate(3deg)" },
+        },
+        flip: {
+          "0%": {
+            transform: "perspective(400px) rotate3d(0, -1, 0, 90deg)",
+            animationTimingFunction: "ease-in",
+            opacity: 0,
+          },
+          "40%": {
+            transform: "perspective(400px) rotate3d(0, -1, 0, -20deg)",
+            animationTimingFunction: "ease-in",
+          },
+          "60%": {
+            transform: "perspective(400px) rotate3d(0, -1, 0, 10deg)",
+            opacity: 1,
+          },
+          "80%": {
+            transform: "perspective(400px) rotate3d(0, -1, 0, -5deg)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "perspective(400px)",
+            opacity: 0,
+          },
         },
       },
     },

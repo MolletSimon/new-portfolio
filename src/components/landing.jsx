@@ -1,56 +1,42 @@
+import { useState } from "react";
 import AnimatedText from "react-animated-text-content";
-import { Fade } from "react-reveal";
+import { Fade, Flip } from "react-reveal";
+import "../App.css";
+import Jello from "react-reveal/Jello";
 
 export default function Landing() {
+  const [hoverImg, setHoverImg] = useState(false);
+
   return (
     <div className="min-h-screen">
-      <Fade cascade>
-        <div className="grid grid-cols-6 grid-rows-1 items-center min-h-full">
-          <h1 className="text-title tracking-title col-span-4 leading-[78px] ml-[93px]  mt-36">
-            Hey there! I’m{" "}
-            <AnimatedText
-              type="chars"
-              interval={0.04}
-              tag="span"
-              duration={1.5}
-              className="text-[#BBE5ED]"
-              animation={{
-                y: "-100px",
-                ease: "ease-in-out",
-              }}
-            >
-              Simon
-            </AnimatedText>
-            , a french
-            <span className="text-[#BBE5ED]">
-              {" "}
-              <AnimatedText
-                type="chars"
-                interval={0.04}
-                tag="span"
-                duration={1.5}
-                className="text-[#BBE5ED]"
-                animation={{
-                  y: "-100px",
-                  ease: "ease-in-out",
-                }}
-              >
-                frontend
-              </AnimatedText>
-            </span>{" "}
-            engineer passionate by React and all the JS environment.
-          </h1>
-          <div className="col-span-2">
-            <img
-              className="ml-[93px] mt-36"
-              src="images/pp.png"
-              alt="profile-picture"
-              width={377}
-              height={344}
-            />
-          </div>
+      <div className="grid grid-cols-6 grid-rows-1 items-center min-h-full">
+        <h1 className="text-5xl leading-[60px] xl:text-title tracking-title col-span-3 xl:col-span-4 xl:leading-[78px] ml-[93px] font-semibold mt-36">
+          Hey there! I’m <span className="simon">S</span>
+          <span className="simon">i</span>
+          <span className="simon2">m</span>
+          <span className="simon2">o</span>
+          <span className="simon3">n</span>, a french{" "}
+          <span className="simon">f</span>
+          <span className="simon">r</span>
+          <span className="simon">o</span>
+          <span className="simon2">n</span>
+          <span className="simon2">t</span>
+          <span className="simon2">e</span>
+          <span className="simon3">n</span>
+          <span className="simon3">d</span> engineer passionate by React and all
+          the JS environment.
+        </h1>
+
+        <div className="col-span-3 xl:col-span-2 items-center flex justify-center">
+          <img
+            className="ml-[93px] mt-36 jello-image"
+            src="images/pp.png"
+            alt="profile-picture"
+            width={377}
+            height={344}
+          />
         </div>
-      </Fade>
+      </div>
     </div>
   );
 }

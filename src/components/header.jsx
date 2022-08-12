@@ -5,9 +5,9 @@ export default function Header() {
     <nav className="w-full flex justify-end p-10 scroll-smooth">
       <a
         className="text-nav tracking-widest mr-16 hover:line-through cursor-pointer"
-        href="#home"
+        href="#works"
       >
-        HOME
+        WORKS
       </a>
       <a className="text-nav tracking-widest mr-16 hover:line-through cursor-pointer">
         EXPERIENCE
