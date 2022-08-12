@@ -17,6 +17,12 @@ module.exports = {
       title: "64px",
     },
     extend: {
+      backgroundImage: {
+        witw: "url('../public/images/WITW/Home.png')",
+        myco: "url('../public/images/MyConnect/Home.png')",
+        mycomob: "url('../public/images/MyConnectMobile/Home.png')",
+        dwt: "url('../public/images/DisneyWaitTimes/Home.png')",
+      },
       dropShadow: {
         pp: "34px 47px 0px rgba(187, 229, 237, 0.4)",
       },
