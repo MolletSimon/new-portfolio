@@ -7,7 +7,11 @@ export function DisneyWaitTimes() {
     window.open("https://github.com/MolletSimon/Disney-Wait-Times", "_blank");
   };
   return (
-    <div id="disney" className="flex justify-center m-40">
+    <div
+      id="disney"
+      data-aos="fade-up-left"
+      className="flex justify-center m-40"
+    >
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-3xl mb-5 flex justify-center w-full">
           Disney Wait Times{" "}
@@ -19,7 +23,7 @@ export function DisneyWaitTimes() {
             onClick={handleClickGithub}
           />
         </h2>
-        <div className="p-10 bg-[#E4F6F7] rounded-md rounded-r-none shadow-xl">
+        <div className="p-10 bg-pastelBlue rounded-md rounded-r-none shadow-xl">
           <p className="font-light text-md">
             Hybrid application that display the wait times for Walt Disney
             Studios et Disneyland Park Paris. Made with React Native and ❤️

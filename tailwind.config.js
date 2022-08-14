@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     colors: {
       primary: "#925E78",
+      pastelPink: "#F0E5EA",
+      pastelBlue: "#E4F6F7",
     },
     letterSpacing: {
       tightest: "-.075em",

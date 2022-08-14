@@ -7,7 +7,11 @@ export function MyConnect() {
     window.open("https://github.com/MolletSimon/my-connect", "_blank");
   };
   return (
-    <div id="my-connect" className="flex justify-center m-40">
+    <div
+      id="my-connect"
+      data-aos="fade-up-right"
+      className="flex justify-center m-40"
+    >
       <img
         className="rounded-md hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
         src="images/MyConnect/Home.png"
@@ -26,14 +30,14 @@ export function MyConnect() {
             onClick={handleClickGithub}
           />
         </h2>
-        <div className="p-10 bg-[#F0E5EA] rounded-md rounded-l-none shadow-xl">
+        <div className="p-10 bg-pastelPink rounded-md rounded-l-none shadow-xl">
           <p className="font-light text-md">
             My Connect is a web application developed for a group of people that
-            organized event that assemble young adults (named Connect). The idea
-            of the application is to help the organization with a feed where
-            people can posts content, a common calendar, the notion of group,
-            poll etc. The application has been thought, designed and developed
-            to work on Android, iOS, on tablet and smartphone format.
+            organized event that assemble young adults (named Connect). <br />
+            The idea of the application is to help the organization with a feed
+            where people can posts content ✉️, a shared calendar 📆, the notion
+            of group, poll etc. The application has been thought, designed and
+            developed to work on Android, iOS, on tablet and smartphone format.
           </p>
         </div>
         <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary">

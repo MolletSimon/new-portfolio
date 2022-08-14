@@ -97,10 +97,4 @@
   animation-iteration-count: 1;
   opacity: 1;
   animation-name: jello;
-
-  animation-play-state: paused;
-}
-
-.jello-image:hover {
-  animation-play-state: running;
 }
