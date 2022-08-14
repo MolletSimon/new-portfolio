@@ -1,10 +1,15 @@
 import { useState } from "react";
+import Pulse from "react-reveal/Pulse";
+import "../App.css";
 
 export default function Experience() {
   const [corp, setCorp] = useState(0);
   const experiences = [
     {
-      job: "Apprentice Fullstack Engineer @Attineos 🐘",
+      job: "Apprentice Fullstack Engineer",
+      corp: "@Attineos 🐘",
+      color: "#FF9601",
+      site: "https://www.attineos.com/",
       missions: [
         "Web development for major Swiss group",
         ".NET Core 3.1",
@@ -14,7 +19,10 @@ export default function Experience() {
       period: "October 2021 - Present",
     },
     {
-      job: "Apprentice Fullstack Engineer @Econocom",
+      site: "https://www.econocom.com/",
+      corp: "@Econocom",
+      color: "#3E0E81",
+      job: "Apprentice Fullstack Engineer",
       missions: [
         "Web and software development",
         "SqlServer database - T-SQL stored procedure",
@@ -24,7 +32,10 @@ export default function Experience() {
       period: "October 2019 - October 2021",
     },
     {
-      job: "Fullstack Developer Trainee @Digiworks Agency 🕹",
+      site: "https://www.digiworks.fr/",
+      job: "Fullstack Developer Trainee",
+      color: "#2A0030",
+      corp: "@Digiworks Agency 🕹",
       missions: [
         "Backend development for a large French group with Symfony",
         "Conception and modelisation of database",
@@ -34,7 +45,10 @@ export default function Experience() {
       period: "January 2019 - February 2019",
     },
     {
-      job: "Web Developer Trainee @Overspeed",
+      site: "http://www.overspeed.fr/",
+      corp: "@Overspeed ⚡️",
+      color: "#142EF0",
+      job: "Web Developer Trainee",
       missions: [
         "Database modelisation",
         "Conception of an API with the Laravel framework",
@@ -44,13 +58,18 @@ export default function Experience() {
     },
   ];
   return (
-    <div className="w-full min-h-screen" id="experience">
+    <div className="w-full" id="experiences">
       <div className="h-1"></div>
-      <h1 className="font-semibold text-5xl text-center mt-32">Experiences</h1>
+      <h1
+        className="font-semibold text-5xl text-center mt-32"
+        data-aos="fade-up"
+      >
+        Experiences
+      </h1>
       <div className="flex justify-center">
         <div className="h-1 border-b-[2px] border-pastelPink mt-16 w-1/2"></div>
       </div>
-      <div className="flex w-full justify-center mt-16">
+      <div className="flex w-full justify-center mt-16" data-aos="fade-up-left">
         <div className="grid grid-cols-10 grid-rows-10 w-1/2">
           <div className="row-span-full col-span-3 border-l-2 border-l-pastelPink">
             <div
@@ -92,11 +111,22 @@ export default function Experience() {
           </div>
           <div className="row-span-full col-span-7 ml-6">
             <h2 className="font-semibold text-lg">{experiences[corp].job}</h2>
+            <a
+              href={experiences[corp].site}
+              target="_blank"
+              style={{
+                color: experiences[corp].color,
+              }}
+            >
+              {experiences[corp].corp}
+            </a>
             <h4 className="mt-4 italic font-light mb-4 text-primary">
               {experiences[corp].period}
             </h4>
             {experiences[corp].missions.map((e) => (
-              <p className="ml-6 p-1">• {e}</p>
+              <Pulse spy={corp}>
+                <p className="ml-6 p-1">• {e}</p>
+              </Pulse>
             ))}
           </div>
         </div>

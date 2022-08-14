@@ -2,7 +2,7 @@ import { useState } from "react";
 import AnimatedText from "react-animated-text-content";
 import { Fade, Flip } from "react-reveal";
 import "../App.css";
-import Jello from "react-reveal/Jello";
+import Bounce from "react-reveal/Bounce";
 import { useEffect } from "react";
 
 export default function Landing() {
@@ -21,28 +21,37 @@ export default function Landing() {
             <span className="simon3">n</span>,
           </p>
           <p className="whitespace-nowrap">
-            a french
-            <span className="simon"> f</span>
+            <span className="simon">f</span>
             <span className="simon">r</span>
             <span className="simon">o</span>
             <span className="simon2">n</span>
             <span className="simon2">t</span>
             <span className="simon2">e</span>
             <span className="simon3">n</span>
-            <span className="simon3">d</span>
+            <span className="simon3">d </span>
+            engineer.
           </p>{" "}
-          engineer passionate by React and all the JS environment.
         </h1>
 
         <div className="col-span-3 xl:col-span-2 items-center flex justify-center">
           <img
-            className="ml-[93px] mt-36 jello-image"
+            className=" mt-36 jello-image mr-28"
             src="images/pp.png"
             alt="profile-picture"
             width={377}
             height={344}
           />
         </div>
+      </div>
+      <div className="flex w-full justify-center">
+        <a href="#works">
+          <img
+            src="images/down-arrow.png"
+            className="mt-36 cursor-pointer"
+            width={30}
+            alt="down arrow"
+          />
+        </a>
       </div>
     </div>
   );

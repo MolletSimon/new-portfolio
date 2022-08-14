@@ -7,10 +7,16 @@ import { MyConnect } from "./works/MyConnect";
 import { MyConnectMobile } from "./works/MyConnectMobile";
 import { WhereInTheWorld } from "./works/WhereInTheWorld";
 
-export default function Home() {
+export default function Works() {
   return (
     <div className="w-full min-h-screen" id="works">
       <div className="h-1"></div>
+      <h1
+        className="font-semibold text-5xl text-center mt-20"
+        data-aos="fade-up"
+      >
+        Works
+      </h1>
       <WhereInTheWorld />
       <MyConnectMobile />
       <MyConnect />

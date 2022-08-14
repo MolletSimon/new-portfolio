@@ -15,12 +15,15 @@ export default function Header() {
       </a>
       <a
         className="text-nav tracking-widest mr-16 hover:line-through cursor-pointer"
-        href="#experience"
+        href="#experiences"
       >
-        EXPERIENCE
+        EXPERIENCES
       </a>
-      <a className="text-nav tracking-widest mr-16 hover:line-through cursor-pointer">
-        ABOUT
+      <a
+        className="text-nav tracking-widest mr-16 hover:line-through cursor-pointer"
+        href="#about"
+      >
+        ABOUT ME
       </a>
     </nav>
   );
