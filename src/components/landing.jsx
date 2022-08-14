@@ -44,7 +44,7 @@ export default function Landing() {
         </div>
       </div>
       <div className="flex w-full justify-center">
-        <a href="#works">
+        <a href="#about">
           <img
             src="images/down-arrow.png"
             className="mt-36 cursor-pointer"

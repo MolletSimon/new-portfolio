@@ -58,7 +58,7 @@ export default function Experience() {
     },
   ];
   return (
-    <div className="w-full" id="experiences">
+    <div className="w-full mb-10" id="experiences">
       <div className="h-1"></div>
       <h1
         className="font-semibold text-5xl text-center mt-32"

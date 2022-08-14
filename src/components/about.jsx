@@ -1,9 +1,9 @@
 export default function About() {
   return (
-    <div className="min-h-screen mt-60" id="about">
+    <div className="min-h-screen" id="about">
       <div className="h-1"></div>
       <h1
-        className="font-semibold text-5xl text-center mt-8"
+        className="font-semibold text-5xl text-center mt-12"
         data-aos="fade-up"
       >
         About me
@@ -113,12 +113,6 @@ export default function About() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="mt-20 mb-10">
-        <p className="italic text-sm text-center">
-          Designed and built by Simon Mollet with React, Figma and ❤️. <br />{" "}
-          Inspired by Brittany Chiang
-        </p>
       </div>
     </div>
   );
