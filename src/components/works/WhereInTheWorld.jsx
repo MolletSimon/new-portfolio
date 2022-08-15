@@ -13,17 +13,17 @@ export function WhereInTheWorld() {
     <div
       id="where-in-the-world"
       data-aos="fade-up-right"
-      className="flex justify-center m-40"
+      className="flex justify-center m-20 xl:m-40"
     >
       <img
-        className="rounded-md hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
+        className="rounded-md hover:scale-110 hover:transition-all object-cover cursor-pointer shadow-xl"
         src="images/WITW/Home.png"
         width={700}
         onClick={handleClickImage}
         alt="Where in the world"
       />
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-3xl mb-5 flex justify-center w-full">
+        <h2 className="lg:text-xl xl:text-3xl mb-5 flex justify-center w-full">
           Where in the world{" "}
           <img
             src="images/github.png"

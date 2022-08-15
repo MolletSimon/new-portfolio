@@ -9,9 +9,9 @@ export default function Landing() {
   const [hoverImg, setHoverImg] = useState(false);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-[80vh] flex flex-col justify-between">
       <div className="grid grid-cols-6 grid-rows-1 items-center min-h-full">
-        <h1 className="text-5xl leading-[60px] xl:text-title tracking-title col-span-3 xl:col-span-4 xl:leading-[78px] ml-[93px] font-semibold mt-36">
+        <h1 className="text-4xl xl:text-5xl leading-[60px] xl:text-title tracking-title col-span-6 lg:col-span-3 xl:col-span-4 xl:leading-[78px] ml-[93px] font-semibold mt-36">
           Hey there! <span className="jello-image ">👋🏻</span> <br />
           <p className="whitespace-nowrap">
             I’m <span className="simon">S</span>
@@ -33,13 +33,11 @@ export default function Landing() {
           </p>{" "}
         </h1>
 
-        <div className="col-span-3 xl:col-span-2 items-center flex justify-center">
+        <div className="lg:col-span-3 xl:col-span-2 items-center flex justify-center">
           <img
-            className=" mt-36 jello-image mr-28"
+            className="hidden lg:block mt-36 jello-image mr-28 w-[250px] lg:w-[377px]"
             src="images/pp.png"
             alt="profile-picture"
-            width={377}
-            height={344}
           />
         </div>
       </div>
@@ -47,7 +45,7 @@ export default function Landing() {
         <a href="#about">
           <img
             src="images/down-arrow.png"
-            className="mt-36 cursor-pointer"
+            className="cursor-pointer"
             width={30}
             alt="down arrow"
           />

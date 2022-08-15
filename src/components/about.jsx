@@ -9,8 +9,11 @@ export default function About() {
         About me
       </h1>
       <div className="flex w-full justify-around mt-16">
-        <div className="w-1/2 m-40 mt-20">
-          <p className="text-lg font-normal" data-aos="fade-up-right">
+        <div className="w-1/2 md:m-10 lg:m-20 xl:m-40 xl:mt-20">
+          <p
+            className="text-sm md:text-md lg:text-lg font-normal"
+            data-aos="fade-up-right"
+          >
             Hello ! I'm <span className="text-primary">Simon</span>, a french
             frontend engineer. <br />
             <br />
