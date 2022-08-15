@@ -8,16 +8,18 @@ export function Portfolio() {
   };
   return (
     <div
-      className="rounded-md bg-pastelBlue flex flex-col justify-between p-6 hover:transition-all 
-           cursor-pointer hover:scale-110"
+      className="rounded-md bg-pastelBlue flex flex-col p-6 hover:transition-all 
+           cursor-pointer hover:scale-110 justify-between"
     >
       <div className="hover:text-primary" onClick={() => site()}>
         <h1 className="text-center m-2 text-lg font-semibold">
           This website 💼
         </h1>
-        <p>This portfolio has been designed and built by myself.</p>
+        <p className="text-center">
+          This portfolio has been designed and built by myself.
+        </p>
       </div>
-      <div className="font-normal text-xs mt-4 italic flex items-center justify-evenly w-full text-primary">
+      <div className="font-normal text-xs mt-4 italic flex items-center justify-evenly w-full text-primary flex-wrap">
         <span>@React</span>
         <span>@Figma</span>
         <span>@Tailwind</span>

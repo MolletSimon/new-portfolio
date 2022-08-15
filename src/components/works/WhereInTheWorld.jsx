@@ -13,17 +13,16 @@ export function WhereInTheWorld() {
     <div
       id="where-in-the-world"
       data-aos="fade-up-right"
-      className="flex justify-center m-20 xl:m-40"
+      className="flex justify-center w-full md:w-auto mt-20 md:m-20 lg:m-40"
     >
       <img
-        className="rounded-md hover:scale-110 hover:transition-all object-cover cursor-pointer shadow-xl"
+        className="md:block w-[400px] xl:w-[700px] hidden rounded-md hover:scale-110 hover:transition-all object-cover cursor-pointer shadow-xl"
         src="images/WITW/Home.png"
-        width={700}
         onClick={handleClickImage}
         alt="Where in the world"
       />
-      <div className="flex flex-col items-center justify-center">
-        <h2 className="lg:text-xl xl:text-3xl mb-5 flex justify-center w-full">
+      <div className="flex flex-col items-center justify-center mt-20 md:mt-0">
+        <h2 className="text-3xl mb-5 flex justify-center w-full">
           Where in the world{" "}
           <img
             src="images/github.png"
@@ -43,7 +42,7 @@ export function WhereInTheWorld() {
             CSS integration
           </p>
         </div>
-        <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary">
+        <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary flex-wrap">
           <p>@React</p>
           <p>@TailwindCSS</p>
           <p>@Firebase</p>

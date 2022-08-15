@@ -10,7 +10,7 @@ export function DisneyWaitTimes() {
     <div
       id="disney"
       data-aos="fade-up-left"
-      className="flex justify-center m-40"
+      className="flex justify-center md:m-20 mt-20 lg:m-40"
     >
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-3xl mb-5 flex justify-center w-full">
@@ -39,9 +39,8 @@ export function DisneyWaitTimes() {
         </div>
       </div>
       <img
-        className="rounded-2xl hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
+        className="md:block w-[400px] xl:w-[700px] object-cover hidden rounded-2xl hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
         src="images/DisneyWaitTimes/Home.png"
-        width={500}
         onClick={handleClickImage}
         alt="Disney"
       />

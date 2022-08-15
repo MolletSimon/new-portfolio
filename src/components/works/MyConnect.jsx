@@ -10,10 +10,10 @@ export function MyConnect() {
     <div
       id="my-connect"
       data-aos="fade-up-right"
-      className="flex justify-center m-40"
+      className="flex justify-center md:m-20 lg:m-40 mt-20 w-full md:w-auto"
     >
       <img
-        className="rounded-md hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
+        className="md:block w-[400px] xl:w-[700px] hidden object-cover rounded-md hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
         src="images/MyConnect/Home.png"
         width={700}
         onClick={handleClickImage}

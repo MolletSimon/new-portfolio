@@ -11,12 +11,12 @@ export function SoccerStats() {
         <h1 className="text-center m-2 text-lg font-semibold">
           Soccer stats 📱
         </h1>
-        <p>
+        <p className="text-center">
           Ionic App for mobile which display the standings, scorers and games of
           the 5 main soccer league
         </p>
       </div>
-      <div className="font-normal text-xs mt-4 italic flex items-center justify-evenly w-full text-primary">
+      <div className="font-normal text-xs mt-4 italic flex items-center justify-evenly w-full text-primary flex-wrap">
         <span>@Ionic</span>
         <span>@Angular</span>
       </div>

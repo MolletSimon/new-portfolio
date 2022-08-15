@@ -10,14 +10,14 @@ export function MyConnectMobile() {
     <div
       id="my-connect-mobile"
       data-aos="fade-up-left"
-      className="flex justify-center m-40"
+      className="flex justify-center lg:m-40 md:m-20 mt-20 w-full md:w-auto"
     >
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center ">
         <h2 className="text-3xl mb-5 flex justify-center w-full">
           My Connect{" "}
           <img
             src="images/github.png"
-            className="ml-6 cursor-pointer hover:scale-105 hover:transition-all "
+            className="ml-6 cursor-pointer hover:scale-105 hover:transition-all object-cover"
             width={40}
             alt="github"
             onClick={handleClickGithub}
@@ -34,7 +34,7 @@ export function MyConnectMobile() {
             developed to work on Android, iOS, on tablet and smartphone format.
           </p>
         </div>
-        <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary">
+        <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary flex-wrap">
           <p>@Flutter</p>
           <p>@Express.js</p>
           <p>@MongoDB</p>
@@ -44,9 +44,8 @@ export function MyConnectMobile() {
         </div>
       </div>
       <img
-        className="rounded-md hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
+        className="md:block w-[400px] xl:w-[700px] hidden object-cover rounded-md hover:scale-110 hover:transition-all cursor-pointer shadow-xl"
         src="images/MyConnectMobile/Home.png"
-        width={700}
         onClick={handleClickImage}
         alt="Where in the world"
       />

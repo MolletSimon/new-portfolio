@@ -29,7 +29,7 @@ export default function Works() {
       </h1>
       <div className="flex w-full justify-center mb-12">
         <div
-          className="grid grid-cols-4 w-2/3 self-center gap-2"
+          className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 md:w-4/5 lg:w-2/3 self-center gap-2"
           data-aos="flip-up"
         >
           <SoccerStats></SoccerStats>

@@ -70,7 +70,7 @@ export default function Experience() {
         <div className="h-1 border-b-[2px] border-pastelPink mt-16 w-1/2"></div>
       </div>
       <div className="flex w-full justify-center mt-16" data-aos="fade-up-left">
-        <div className="grid grid-cols-10 grid-rows-10 w-1/2">
+        <div className="grid grid-cols-10 grid-rows-10 lg:w-1/2">
           <div className="row-span-full col-span-3 border-l-2 border-l-pastelPink">
             <div
               onClick={() => setCorp(0)}

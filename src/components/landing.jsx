@@ -11,7 +11,7 @@ export default function Landing() {
   return (
     <div className="min-h-[80vh] flex flex-col justify-between">
       <div className="grid grid-cols-6 grid-rows-1 items-center min-h-full">
-        <h1 className="text-4xl xl:text-5xl leading-[60px] xl:text-title tracking-title col-span-6 lg:col-span-3 xl:col-span-4 xl:leading-[78px] ml-[93px] font-semibold mt-36">
+        <h1 className="text-3xl ml-4 md:ml-10 md:text-4xl mt-20 xl:text-5xl md:leading-[60px] xl:text-title tracking-title col-span-6 sm:col-span-3 xl:col-span-4 xl:leading-[78px] lg:ml-[93px] font-semibold md:mt-36">
           Hey there! <span className="jello-image ">👋🏻</span> <br />
           <p className="whitespace-nowrap">
             I’m <span className="simon">S</span>
@@ -20,22 +20,24 @@ export default function Landing() {
             <span className="simon2">o</span>
             <span className="simon3">n</span>,
           </p>
-          <p className="whitespace-nowrap">
-            <span className="simon">f</span>
-            <span className="simon">r</span>
-            <span className="simon">o</span>
-            <span className="simon2">n</span>
-            <span className="simon2">t</span>
-            <span className="simon2">e</span>
-            <span className="simon3">n</span>
-            <span className="simon3">d </span>
+          <div className="flex w-full">
+            <p className="whitespace-nowrap">
+              <span className="simon">f</span>
+              <span className="simon">r</span>
+              <span className="simon">o</span>
+              <span className="simon2">n</span>
+              <span className="simon2">t</span>
+              <span className="simon2">e</span>
+              <span className="simon3">n</span>
+              <span className="simon3">d </span>
+            </p>{" "}
             engineer.
-          </p>{" "}
+          </div>
         </h1>
 
-        <div className="lg:col-span-3 xl:col-span-2 items-center flex justify-center">
+        <div className="sm:col-span-3 xl:col-span-2 items-center flex justify-center">
           <img
-            className="hidden lg:block mt-36 jello-image mr-28 w-[250px] lg:w-[377px]"
+            className="hidden sm:block mt-36 jello-image lg:mr-28 w-[100px] md:w-[250px] lg:w-[377px]"
             src="images/pp.png"
             alt="profile-picture"
           />
