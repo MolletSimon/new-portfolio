@@ -15,7 +15,7 @@ export default function Works() {
         className="font-semibold text-5xl text-center mt-20"
         data-aos="fade-up"
       >
-        Works
+        Projects
       </h1>
       <WhereInTheWorld />
       <MyConnectMobile />

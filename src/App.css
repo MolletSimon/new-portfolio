@@ -139,3 +139,32 @@
 .bouncy-image:hover {
   animation-play-state: paused;
 }
+
+/* effect-shine */
+a.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(22, 0, 150, 0.774) 30%, rgb(160, 0, 192) 50%, rgba(24, 0, 68, 0.678) 70%);
+  mask-image: linear-gradient(-75deg, rgba(22, 0, 150, 0.774) 30%, rgb(160, 0, 192) 50%, rgba(24, 0, 68, 0.678) 70%);
+  -webkit-mask-size: 200%;
+  mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+@keyframes shine {
+  from {
+    mask-position: 150%;
+  }
+  
+  to {
+    mask-position: -50%;
+  }
+}

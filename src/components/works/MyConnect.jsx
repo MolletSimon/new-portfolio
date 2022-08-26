@@ -32,12 +32,13 @@ export function MyConnect() {
         </h2>
         <div className="p-10 bg-pastelPink rounded-md rounded-l-none shadow-xl">
           <p className="font-light text-md">
-            My Connect is a web application developed for a group of people that
-            organized event that assemble young adults (named Connect). <br />
+            My Connect is a mobile application targeting a group of people. It
+            aims to organise events bringing together young adults (called
+            Connect). <br />
             The idea of the application is to help the organization with a feed
-            where people can posts content ✉️, a shared calendar 📆, the notion
-            of group, poll etc. The application has been thought, designed and
-            developed to work on Android, iOS, on tablet and smartphone format.
+            where people can post content ✉️, a shared calendar 📆, the notion
+            of group, poll etc. The application has been designed and developed
+            to work on Android, iOS, on tablet and smartphone format.
           </p>
         </div>
         <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary">

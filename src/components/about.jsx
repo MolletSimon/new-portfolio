@@ -17,8 +17,8 @@ export default function About() {
             Hello ! I'm <span className="text-primary">Simon</span>, a french
             frontend engineer. <br />
             <br />
-            Passionate by development since 2017, I really discovered frontend 3
-            years ago with{" "}
+            Passionate about development since 2017, I really discovered
+            frontend 3 years ago with{" "}
             <a
               href="https://angular.io/start"
               className="text-primary hover:line-through italic"
@@ -43,8 +43,8 @@ export default function About() {
             >
               React
             </a>{" "}
-            .<br /> I really appreciate working with React (or its environment
-            like Preact or Next) for its architecture and its lightness.
+            .<br /> I really enjoy working with React (or its environment like
+            Preact or Next) for its architecture and its lightness.
             <br />
             <br />I am currently working for{" "}
             <a
@@ -58,7 +58,8 @@ export default function About() {
             full-stack engineer. My main mission are building web applications
             for an insurance company with Angular and .NET Core environment.
             <br />
-            <br />I am comfortable with many technlogies but here are the main :
+            <br />I am comfortable with many technlogies and here are the main
+            ones :
             <div className="flex flex-col ml-6">
               <span> {">"} JavaScript (ES2015, ES6+), TypeScript</span>
               <span> {">"} React.js, Angular</span>

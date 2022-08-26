@@ -36,10 +36,10 @@ export function WhereInTheWorld() {
           <p className="font-light text-md">
             Where in the world is a collection of 4 geography games 🎮. 
             <br />
-            The idea came out following a challenge on Frontend Mentor, I did
-            most of the application from scratch using React for the frontend,
-            Firebase for the backend, Figma for the design and Tailwind for the
-            CSS integration
+            The idea came out following a challenge on Frontend Mentor, I
+            developed most of the application from scratch using React for the
+            frontend, Firebase for the backend, Figma for the design and
+            Tailwind for the CSS integration
           </p>
         </div>
         <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary flex-wrap">
