@@ -23,13 +23,14 @@ export default function Landing() {
           <div className="flex w-full">
             <p className="whitespace-nowrap">
               <span className="simon">f</span>
-              <span className="simon">r</span>
-              <span className="simon">o</span>
-              <span className="simon2">n</span>
+              <span className="simon">u</span>
+              <span className="simon">l</span>
+              <span className="simon2">l</span>
+              <span className="simon2">s</span>
               <span className="simon2">t</span>
-              <span className="simon2">e</span>
-              <span className="simon3">n</span>
-              <span className="simon3">d </span>
+              <span className="simon3">a</span>
+              <span className="simon3">c</span>
+              <span className="simon3">k</span>
             </p>{" "}
             engineer.
           </div>
