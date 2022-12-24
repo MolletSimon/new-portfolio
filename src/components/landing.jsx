@@ -30,7 +30,7 @@ export default function Landing() {
               <span className="simon2">t</span>
               <span className="simon3">a</span>
               <span className="simon3">c</span>
-              <span className="simon3">k</span>
+              <span className="simon3">k </span>
             </p>{" "}
             engineer.
           </div>
