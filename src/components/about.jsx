@@ -15,7 +15,7 @@ export default function About() {
             data-aos="fade-up-right"
           >
             Hello ! I'm <span className="text-primary">Simon</span>, a french
-            frontend engineer. <br />
+            fullstack freelance engineer. <br />
             <br />
             Passionate about development since 2017, I really discovered
             frontend 3 years ago with{" "}
