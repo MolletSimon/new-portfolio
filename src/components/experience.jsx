@@ -6,6 +6,19 @@ export default function Experience() {
   const [corp, setCorp] = useState(0);
   const experiences = [
     {
+      job: "Freelance Fullstack Engineer",
+      corp: "@Matmut",
+      color: "#000069",
+      site: "https://www.matmut.fr/",
+      missions: [
+        "Web development for major French insurance company",
+        ".NET 5.0, .Net Framework MVC",
+        "React.js",
+        "Docker, Git",
+      ],
+      period: "Mars 2023 - Present",
+    },
+    {
       job: "Apprentice Fullstack Engineer",
       corp: "@Attineos 🐘",
       color: "#FF9601",
@@ -16,7 +29,7 @@ export default function Experience() {
         "Angular 8+",
         "Scrum, CICD, Git flow",
       ],
-      period: "October 2021 - Present",
+      period: "October 2021 - December 2022",
     },
     {
       site: "https://www.econocom.com/",
@@ -72,23 +85,23 @@ export default function Experience() {
       <div className="flex w-full justify-center mt-16" data-aos="fade-up-left">
         <div className="grid grid-cols-10 grid-rows-10 lg:w-1/2">
           <div className="row-span-full col-span-3 border-l-2 border-l-pastelPink">
-            <div
+          <div
               onClick={() => setCorp(0)}
               className={`hover:bg-pastelPink cursor-pointer ${
                 corp === 0 &&
                 "bg-pastelPink border-l-2 border-l-primar rounded-r-md"
               } pb-4 pt-4 pl-4 hover:transition-colors hover:duration-500`}
             >
-              Attineos
+              Matmut
             </div>
             <div
               onClick={() => setCorp(1)}
-              className={`hover:bg-pastelPink ${
+              className={`hover:bg-pastelPink cursor-pointer ${
                 corp === 1 &&
-                "bg-pastelPink border-l-2 border-l-primary rounded-r-md"
-              } cursor-pointer pb-4 pt-4 pl-4 hover:transition-colors hover:duration-500`}
+                "bg-pastelPink border-l-2 border-l-primar rounded-r-md"
+              } pb-4 pt-4 pl-4 hover:transition-colors hover:duration-500`}
             >
-              Econocom
+              Attineos
             </div>
             <div
               onClick={() => setCorp(2)}
@@ -97,12 +110,21 @@ export default function Experience() {
                 "bg-pastelPink border-l-2 border-l-primary rounded-r-md"
               } cursor-pointer pb-4 pt-4 pl-4 hover:transition-colors hover:duration-500`}
             >
-              Digiworks
+              Econocom
             </div>
             <div
               onClick={() => setCorp(3)}
               className={`hover:bg-pastelPink ${
                 corp === 3 &&
+                "bg-pastelPink border-l-2 border-l-primary rounded-r-md"
+              } cursor-pointer pb-4 pt-4 pl-4 hover:transition-colors hover:duration-500`}
+            >
+              Digiworks
+            </div>
+            <div
+              onClick={() => setCorp(4)}
+              className={`hover:bg-pastelPink ${
+                corp === 4 &&
                 "bg-pastelPink border-l-2 border-l-primary rounded-r-md"
               } cursor-pointer pb-4 pt-4 pl-4 hover:transition-colors hover:duration-500`}
             >

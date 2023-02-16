@@ -48,15 +48,15 @@ export default function About() {
             <br />
             <br />I am currently working for{" "}
             <a
-              href="https://www.attineos.com/"
+              href="https://www.matmut.fr/"
               target="_blank"
               className="text-primary hover:line-through italic"
             >
-              Attineos
+              Matmut
             </a>{" "}
-            🐘, a software and computing services company, as an apprentice
+            , a major french insurance company, as a freelance
             full-stack engineer. My main mission are building web applications
-            for an insurance company with Angular and .NET Core environment.
+            for the company with React.js and .NET Core environment.
             <br />
             <br />I am comfortable with many technlogies and here are the main
             ones :
@@ -103,11 +103,12 @@ export default function About() {
               className="rounded-full border-2 border-pastelPink p-6 cursor-pointer 
             shadow-lg shadow-pastelPink hover:bg-pastelPink hover:transition-colors duration-700"
               data-aos="fade-up-right"
+              target="_blank"
             >
               <img src="images/cv.png" alt="resume" width={30} />
             </a>
             <a
-              href="mailto:mollet.simon.pro@gmail.com"
+              href="mailto:simonmollet.developpement@gmail.com"
               className="rounded-full border-2 border-pastelPink p-6 cursor-pointer 
             shadow-lg shadow-pastelPink hover:bg-pastelPink hover:transition-colors duration-700"
               data-aos="fade-up-left"

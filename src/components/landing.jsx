@@ -21,8 +21,9 @@ export default function Landing() {
             <span className="simon3">n</span>,
           </p>
           <div className="flex w-full">
+            freelance 
             <p className="whitespace-nowrap">
-              <span className="simon">f</span>
+              <span className="simon"> f</span>
               <span className="simon">u</span>
               <span className="simon">l</span>
               <span className="simon2">l</span>
