@@ -1,17 +1,11 @@
 import { useState } from "react";
-import AnimatedText from "react-animated-text-content";
-import { Fade, Flip } from "react-reveal";
 import "../App.css";
-import Bounce from "react-reveal/Bounce";
-import { useEffect } from "react";
 
 export default function Landing() {
-  const [hoverImg, setHoverImg] = useState(false);
-
   return (
     <div className="min-h-[80vh] flex flex-col justify-between">
       <div className="grid grid-cols-6 grid-rows-1 items-center min-h-full">
-        <h1 className="text-3xl ml-4 md:ml-10 md:text-4xl mt-20 xl:text-5xl md:leading-[60px] xl:text-title tracking-title col-span-6 sm:col-span-3 xl:col-span-4 xl:leading-[78px] lg:ml-[93px] font-semibold md:mt-36">
+        <h1 className="text-3xl ml-4 md:ml-10 mt-20 md:leading-[60px] xl:text-title tracking-title col-span-6 sm:col-span-3 xl:col-span-4 xl:leading-[78px] lg:ml-[93px] font-semibold md:mt-36">
           Hey there! <span className="jello-image ">👋🏻</span> <br />
           <p className="whitespace-nowrap">
             I’m <span className="simon">S</span>
@@ -21,9 +15,8 @@ export default function Landing() {
             <span className="simon3">n</span>,
           </p>
           <div className="flex w-full">
-            freelance 
             <p className="whitespace-nowrap">
-              <span className="simon"> f</span>
+              <span className="simon">f</span>
               <span className="simon">u</span>
               <span className="simon">l</span>
               <span className="simon2">l</span>

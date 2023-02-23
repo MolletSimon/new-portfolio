@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       fontSize: {
         nav: "16px",
-        title: "64px",
+        title: "54px",
       },
       backgroundImage: {
         witw: "url('../public/images/WITW/Home.png')",

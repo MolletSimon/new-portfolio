@@ -21,6 +21,12 @@ export default function Header() {
       >
         EXPERIENCES
       </a>
+      <a
+        className="text-nav tracking-widest hover:text-primary mr-16 effect-shine hover:font-bold hover:scale-110 hover:transition-all duration-500 cursor-pointer"
+        href="#contact"
+      >
+        CONTACT ME
+      </a>
     </nav>
   );
 }
