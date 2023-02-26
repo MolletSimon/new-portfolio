@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import LanguageContext from "../language-context";
+import { t } from "../text";
+
 export default function About() {
+  const { language, _ } = useContext(LanguageContext);
+
   return (
     <div className="min-h-screen" id="about">
       <div className="h-1"></div>
@@ -8,17 +14,18 @@ export default function About() {
       >
         About me
       </h1>
-      <div className="flex w-full justify-around mt-16 flex-col md:flex-row items-center">
+      <div className="flex w-full justify-around mt-8 flex-col md:flex-row items-center">
         <div className="md:w-1/2 m-6 md:m-10 lg:m-20 xl:m-40 xl:mt-20">
           <p
             className="text-center text-sm md:text-md lg:text-lg font-normal"
             data-aos="fade-up-right"
           >
-            Hello ! I'm <span className="text-primary">Simon</span>, a french
-            fullstack freelance engineer. <br />
+            {t[language].about.hello}{" "}
+            <span className="text-primary">Simon</span>,{" "}
+            {t[language].about.fullstack}
             <br />
-            Passionate about development since 2017, I really discovered
-            frontend 3 years ago with{" "}
+            <br />
+            {t[language].about.passionnate}{" "}
             <a
               href="https://angular.io/start"
               className="text-primary hover:line-through italic"
@@ -26,8 +33,7 @@ export default function About() {
             >
               Angular
             </a>
-            . I also started mobile development with Ionic at the same time,
-            which leads me to{" "}
+            . {t[language].about.mobile}{" "}
             <a
               href="https://reactnative.dev/"
               target="_blank"
@@ -35,7 +41,7 @@ export default function About() {
             >
               React Native
             </a>{" "}
-            ⚛️ and then{" "}
+            ⚛️ {t[language].about.and}{" "}
             <a
               href="https://fr.reactjs.org/"
               target="_blank"
@@ -43,10 +49,10 @@ export default function About() {
             >
               React
             </a>{" "}
-            .<br /> I really enjoy working with React (or its environment like
-            Preact or Next) for its architecture and its lightness.
+            .<br /> {t[language].about.react}
             <br />
-            <br />I am currently working for{" "}
+            <br />
+            {t[language].about.working}{" "}
             <a
               href="https://www.matmut.fr/"
               target="_blank"
@@ -54,17 +60,27 @@ export default function About() {
             >
               Matmut
             </a>{" "}
-            , a major french insurance company, as a freelance
-            full-stack engineer. My main mission are building web applications
-            for the company with React.js and .NET Core environment.
+            , {t[language].about.matmut}
             <br />
-            <br />I am comfortable with many technlogies and here are the main
-            ones :
-            <div className="flex flex-col ml-6">
-              <span> {">"} JavaScript (ES2015, ES6+), TypeScript</span>
-              <span> {">"} React.js, Angular</span>
-              <span> {">"} .NET Core, Express.js</span>
-              <span> {">"} ReactNative, Flutter</span>
+            <br />
+            {t[language].about.comfortable}
+            <div className="flex flex-col ml-6 mt-4 rounded-lg border-[1px] shadow-md border-primary">
+              <span className="bg-pastelBlue p-2">
+                {" "}
+                {">"} JavaScript (ES2015, ES6+), TypeScript
+              </span>
+              <span className="bg-pastelPink p-2">
+                {" "}
+                {">"} React.js, Angular
+              </span>
+              <span className="bg-pastelBlue p-2">
+                {" "}
+                {">"} .NET Core, Express.js
+              </span>
+              <span className="bg-pastelPink p-2">
+                {" "}
+                {">"} ReactNative, Flutter
+              </span>
             </div>
           </p>
         </div>
