@@ -1,75 +1,15 @@
+import { useContext } from "react";
 import { useState } from "react";
 import Pulse from "react-reveal/Pulse";
 import "../App.css";
+import LanguageContext from "../language-context";
+import { t } from "../text";
 
 export default function Experience() {
   const [corp, setCorp] = useState(0);
-  const experiences = [
-    {
-      job: "Freelance Fullstack Engineer",
-      corp: "@Matmut",
-      color: "#000069",
-      site: "https://www.matmut.fr/",
-      missions: [
-        "Web development for major French insurance company",
-        ".NET 5.0, .Net Framework MVC",
-        "React.js",
-        "Docker, Git",
-      ],
-      period: "Mars 2023 - Present",
-    },
-    {
-      job: "Apprentice Fullstack Engineer",
-      corp: "@Attineos 🐘",
-      color: "#FF9601",
-      site: "https://www.attineos.com/",
-      missions: [
-        "Web development for major Swiss group",
-        ".NET Core 3.1",
-        "Angular 8+",
-        "Scrum, CICD, Git flow",
-      ],
-      period: "October 2021 - December 2022",
-    },
-    {
-      site: "https://www.econocom.com/",
-      corp: "@Econocom",
-      color: "#3E0E81",
-      job: "Apprentice Fullstack Engineer",
-      missions: [
-        "Web and software development",
-        "SqlServer database - T-SQL stored procedure",
-        ".NETFramework or .NETCore Backend",
-        "Angular or AngularJS Frontend",
-      ],
-      period: "October 2019 - October 2021",
-    },
-    {
-      site: "https://www.digiworks.fr/",
-      job: "Fullstack Developer Trainee",
-      color: "#2A0030",
-      corp: "@Digiworks Agency 🕹",
-      missions: [
-        "Backend development for a large French group with Symfony",
-        "Conception and modelisation of database",
-        "Configuration of the firewall",
-        "VR Application development with Unity3D",
-      ],
-      period: "January 2019 - February 2019",
-    },
-    {
-      site: "http://www.overspeed.fr/",
-      corp: "@Overspeed ⚡️",
-      color: "#142EF0",
-      job: "Web Developer Trainee",
-      missions: [
-        "Database modelisation",
-        "Conception of an API with the Laravel framework",
-        "Realisation of a custom map, including POI and paths placement, with Leaflet.js",
-      ],
-      period: "March 2018 - June 2018",
-    },
-  ];
+  const { language, _ } = useContext(LanguageContext);
+
+  const experiences = t[language].experiences;
   return (
     <div className="w-full mb-10" id="experiences">
       <div className="h-1"></div>
@@ -85,7 +25,7 @@ export default function Experience() {
       <div className="flex w-full justify-center mt-16" data-aos="fade-up-left">
         <div className="grid grid-cols-10 grid-rows-10 lg:w-1/2">
           <div className="row-span-full col-span-3 border-l-2 border-l-pastelPink">
-          <div
+            <div
               onClick={() => setCorp(0)}
               className={`hover:bg-pastelPink cursor-pointer ${
                 corp === 0 &&
