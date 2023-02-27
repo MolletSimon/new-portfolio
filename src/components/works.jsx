@@ -6,8 +6,12 @@ import { DisneyWaitTimes } from "./works/DisneyWaitTimes";
 import { MyConnect } from "./works/MyConnect";
 import { MyConnectMobile } from "./works/MyConnectMobile";
 import { WhereInTheWorld } from "./works/WhereInTheWorld";
+import { useContext } from "react";
+import LanguageContext from "../language-context";
+import { t } from "../text";
 
 export default function Works() {
+  const {language, setLanguage} = useContext(LanguageContext)
   return (
     <div className="w-full min-h-screen" id="works">
       <div className="h-1"></div>
@@ -15,7 +19,7 @@ export default function Works() {
         className="font-semibold text-5xl text-center mt-20"
         data-aos="fade-up"
       >
-        Side Projects
+        {t[language].works.project}
       </h1>
       <WhereInTheWorld />
       <MyConnectMobile />
@@ -25,7 +29,7 @@ export default function Works() {
         className="text-center m-10 font-semibold text-3xl"
         data-aos="fade-up"
       >
-        Other small projects
+        {t[language].works.smallProject}
       </h1>
       <div className="flex w-full justify-center mb-12">
         <div

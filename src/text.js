@@ -93,7 +93,26 @@ export const t = {
         period: "March 2018 - June 2018",
       },
     ],
-    works: {},
+    works: {
+      project: "Side Projects",
+      smallProject:"Other small projects",
+      witw: {
+        title: "Where in the world is a collection of 4 geography games",
+        desc: "The idea came out following a challenge on Frontend Mentor, I developed most of the application from scratch using React for the frontend, Firebase for the backend, Figma for the design and Tailwind for the CSS integration"
+      },
+      myconnect: {
+        title: "My Connect is a mobile application targeting a group of people. It aims to organise events bringing together young adults (called Connect).",
+        desc: "The idea of the application is to help the organization with a feed where people can post content ✉️, a shared calendar 📆, the notion of group, poll etc. The application has been designed and developed to work on Android, iOS, on tablet and smartphone format."
+      },
+      myconnectmobile: {
+        title: "My Connect is a mobile application 📱 developed for a group of people that organized event that assemble young adults (named Connect).",
+        desc: "The idea of the application is to help the organization with a feed where people can posts content ✉️, a shared calendar 📆, the notion of group, poll etc. The application has been thought, designed and developed to work on Android, iOS, on tablet and smartphone format."
+      },
+      disneywaittimes: {
+        desc: "Hybrid application that display the wait times for Walt Disney Studios et Disneyland Park Paris. Made with React Native and ❤️"
+      },
+      small: {}
+    },
     contact: {},
     footer: {},
   }, // English
@@ -191,7 +210,26 @@ export const t = {
         period: "Mars 2018 - Juin 2018",
       },
     ],
-    works: {},
+    works: {
+      project: "Projets",
+      smallProject: "Petits projets",
+      witw: {
+        title: "Where in the world est une collection de 4 jeux de géographie",
+        desc: "L'idée est née suite à un challenge sur Frontend Mentor, j'ai développé la majorité de l'application de A à Z en utilisant React pour le frontend, Firebase pour le backend, Figma pour le design et Tailwind pour l'intégration CSS"
+      },
+      myconnect: {
+        title: "My Connect est une application mobile ciblant un groupe de personnes. Elle a pour but d'organiser des événements rassemblant des jeunes adultes (appelés Connect).",
+        desc: "L'idée de l'application est d'aider l'organisation avec un fil d'actualité où les gens peuvent poster du contenu ✉️, un calendrier partagé 📆, la notion de groupe, sondage etc. L'application a été pensée, conçue et développée pour fonctionner sur Android, iOS, sur format tablette et smartphone."
+      },
+      myconnectmobile: {
+        title: "My Connect est une application mobile ciblant un groupe de personnes. Elle a pour but d'organiser des événements rassemblant des jeunes adultes (appelés Connect).",
+        desc: "L'idée de l'application est d'aider l'organisation avec un fil d'actualité où les gens peuvent poster du contenu ✉️, un calendrier partagé 📆, la notion de groupe, sondage etc. L'application a été pensée, conçue et développée pour fonctionner sur Android, iOS, sur format tablette et smartphone."
+      },
+      disneywaittimes: {
+        title: "Application hybride qui affiche les temps d'attente pour Walt Disney Studios et Disneyland Park Paris. Fait avec React Native et ❤️"
+      },
+      small: {}
+    },
     contact: {},
     footer: {},
   }, // French

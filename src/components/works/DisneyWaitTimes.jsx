@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import LanguageContext from "../../language-context";
+import { t } from "../../text";
+
 export function DisneyWaitTimes() {
+  const {language, _} = useContext(LanguageContext);
   const handleClickImage = () => {
     window.open("https://github.com/MolletSimon/Disney-Wait-Times", "_blank");
   };
@@ -25,8 +30,7 @@ export function DisneyWaitTimes() {
         </h2>
         <div className="p-10 bg-pastelBlue rounded-md rounded-r-none shadow-xl">
           <p className="font-light text-md">
-            Hybrid application that display the wait times for Walt Disney
-            Studios et Disneyland Park Paris. Made with React Native and ❤️
+            {t[language].works.disneywaittimes.title}
           </p>
         </div>
         <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary">

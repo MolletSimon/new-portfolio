@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import LanguageContext from "../../language-context";
+import { t } from "../../text";
+
 export function MyConnect() {
+  const {language, _} = useContext(LanguageContext);
   const handleClickImage = () => {
     window.open("https://github.com/MolletSimon/my-connect", "_blank");
   };
@@ -32,13 +37,8 @@ export function MyConnect() {
         </h2>
         <div className="p-10 bg-pastelPink rounded-md rounded-l-none shadow-xl">
           <p className="font-light text-md">
-            My Connect is a mobile application targeting a group of people. It
-            aims to organise events bringing together young adults (called
-            Connect). <br />
-            The idea of the application is to help the organization with a feed
-            where people can post content ✉️, a shared calendar 📆, the notion
-            of group, poll etc. The application has been designed and developed
-            to work on Android, iOS, on tablet and smartphone format.
+            {t[language].works.myconnect.title} <br />
+            {t[language].works.myconnect.desc}
           </p>
         </div>
         <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary">

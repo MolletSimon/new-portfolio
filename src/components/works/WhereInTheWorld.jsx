@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import LanguageContext from "../../language-context";
+import { t } from "../../text";
+
 export function WhereInTheWorld() {
+  const {language, setLanguage} = useContext(LanguageContext);
+
   const handleClickImage = () => {
     window.open("https://whereintheworld.online", "_blank");
   };
@@ -34,12 +40,9 @@ export function WhereInTheWorld() {
         </h2>
         <div className="p-10 bg-pastelPink rounded-md rounded-l-none shadow-xl">
           <p className="font-light text-md">
-            Where in the world is a collection of 4 geography games 🎮. 
+            {t[language].works.witw.title} 🎮. 
             <br />
-            The idea came out following a challenge on Frontend Mentor, I
-            developed most of the application from scratch using React for the
-            frontend, Firebase for the backend, Figma for the design and
-            Tailwind for the CSS integration
+            {t[language].works.witw.desc}
           </p>
         </div>
         <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary flex-wrap">
