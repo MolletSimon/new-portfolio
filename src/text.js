@@ -232,7 +232,7 @@ export const t = {
         desc: "L'idée est née suite à un challenge sur Frontend Mentor, j'ai développé la majorité de l'application de A à Z en utilisant React pour le frontend, Firebase pour le backend, Figma pour le design et Tailwind pour l'intégration CSS"
       },
       myconnect: {
-        title: "My Connect est une application mobile ciblant un groupe de personnes. Elle a pour but d'organiser des événements rassemblant des jeunes adultes (appelés Connect).",
+        title: "My Connect est la version web de My Connect. Elle a pour but d'organiser des événements rassemblant des jeunes adultes (appelés Connect).",
         desc: "L'idée de l'application est d'aider l'organisation avec un fil d'actualité où les gens peuvent poster du contenu ✉️, un calendrier partagé 📆, la notion de groupe, sondage etc. L'application a été pensée, conçue et développée pour fonctionner sur Android, iOS, sur format tablette et smartphone."
       },
       myconnectmobile: {

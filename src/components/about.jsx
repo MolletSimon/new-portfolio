@@ -64,20 +64,20 @@ export default function About() {
             <br />
             <br />
             {t[language].about.comfortable}
-            <div className="flex flex-col ml-6 mt-4 rounded-lg border-[1px] shadow-md border-primary">
-              <span className="bg-pastelBlue p-2">
+            <div className="flex flex-col ml-6 mt-4">
+              <span className="p-2">
                 {" "}
                 {">"} JavaScript (ES2015, ES6+), TypeScript
               </span>
-              <span className="bg-pastelPink p-2">
+              <span className="p-2">
                 {" "}
                 {">"} React.js, Angular
               </span>
-              <span className="bg-pastelBlue p-2">
+              <span className="p-2">
                 {" "}
                 {">"} .NET Core, Express.js
               </span>
-              <span className="bg-pastelPink p-2">
+              <span className="p-2">
                 {" "}
                 {">"} ReactNative, Flutter
               </span>
