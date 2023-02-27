@@ -12,7 +12,7 @@ export default function About() {
         className="font-semibold text-5xl text-center mt-12"
         data-aos="fade-up"
       >
-        About me
+        {t[language].about.title}
       </h1>
       <div className="flex w-full justify-around mt-8 flex-col md:flex-row items-center">
         <div className="md:w-1/2 m-6 md:m-10 lg:m-20 xl:m-40 xl:mt-20">
@@ -69,18 +69,9 @@ export default function About() {
                 {" "}
                 {">"} JavaScript (ES2015, ES6+), TypeScript
               </span>
-              <span className="p-2">
-                {" "}
-                {">"} React.js, Angular
-              </span>
-              <span className="p-2">
-                {" "}
-                {">"} .NET Core, Express.js
-              </span>
-              <span className="p-2">
-                {" "}
-                {">"} ReactNative, Flutter
-              </span>
+              <span className="p-2"> {">"} React.js, Angular</span>
+              <span className="p-2"> {">"} .NET Core, Express.js</span>
+              <span className="p-2"> {">"} ReactNative, Flutter</span>
             </div>
           </p>
         </div>
