@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import LanguageContext from "../../../language-context";
+import { t } from "../../../text";
+
 export function IPAddress() {
+  const {language, _} = useContext(LanguageContext);
+
   const github = () => {
     window.open("https://github.com/MolletSimon/ip-adress-tracker", "_blank");
   };
@@ -16,8 +22,7 @@ export function IPAddress() {
           IP Address Tracker 🔍
         </h1>
         <p className="text-center">
-          Single Page Application that gives you the information on american IP
-          Address.
+          {t[language].works.small.ipaddress}
         </p>
       </div>
       <div className="font-normal text-xs mt-4 italic flex items-center justify-evenly w-full text-primary flex-wrap">

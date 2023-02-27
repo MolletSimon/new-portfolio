@@ -109,12 +109,26 @@ export const t = {
         desc: "The idea of the application is to help the organization with a feed where people can posts content ✉️, a shared calendar 📆, the notion of group, poll etc. The application has been thought, designed and developed to work on Android, iOS, on tablet and smartphone format."
       },
       disneywaittimes: {
-        desc: "Hybrid application that display the wait times for Walt Disney Studios et Disneyland Park Paris. Made with React Native and ❤️"
+        title: "Hybrid application that display the wait times for Walt Disney Studios et Disneyland Park Paris. Made with React Native and ❤️"
       },
-      small: {}
+      small: {
+        ipaddress: "Single Page Application that gives you the information on american IP Address.",
+        portfolio: "This portfolio has been designed and built by myself.",
+        soccer: "Ionic App for mobile which display the standings, scorers and games of the 5 main soccer leagues",
+        small: "Link to my small projects"
+      }
     },
-    contact: {},
-    footer: {},
+    contact: {
+      title: "Contact me",
+      name: "Name",
+      email: "Email",
+      message: "Message",
+      send: "Send",
+    },
+    footer: {
+      made: "Designed and built by Simon Mollet with React, Figma and ❤️.",
+      inspired: "Inspired by Brittany Chiang.",
+    },
   }, // English
   fr: {
     about: {
@@ -212,7 +226,7 @@ export const t = {
     ],
     works: {
       project: "Projets",
-      smallProject: "Petits projets",
+      smallProject: "Micro projets",
       witw: {
         title: "Where in the world est une collection de 4 jeux de géographie",
         desc: "L'idée est née suite à un challenge sur Frontend Mentor, j'ai développé la majorité de l'application de A à Z en utilisant React pour le frontend, Firebase pour le backend, Figma pour le design et Tailwind pour l'intégration CSS"
@@ -228,9 +242,24 @@ export const t = {
       disneywaittimes: {
         title: "Application hybride qui affiche les temps d'attente pour Walt Disney Studios et Disneyland Park Paris. Fait avec React Native et ❤️"
       },
-      small: {}
+      small: {
+        // french
+        ipaddress: "Application web qui affiche l'adresse IP de l'utilisateur",
+        portfolio: "Ce portfolio a été designé et développé par mes soins",
+        soccer: "Application mobile Ionic qui affiche les résultats, buteurs, statitstiques et classement des 5 ligues majeurs de football", 
+        small: "Lien vers tous mes micro projets",
+      }
     },
-    contact: {},
-    footer: {},
+    contact: {
+      title: "Contactez-moi",
+      name: "Nom",
+      email: "Email",
+      message: "Message",
+      send: "Envoyer",
+    },
+    footer: {
+      made: "Designé et développé par Simon Mollet avec React, Figma et ❤️",
+      inspired: "Inspiré de Brittany Chiang",
+    },
   }, // French
 };

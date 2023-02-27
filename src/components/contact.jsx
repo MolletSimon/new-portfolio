@@ -2,9 +2,13 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useContext } from "react";
+import LanguageContext from "../language-context";
+import { t } from "../text";
 
 function ContactMe() {
   const form = useRef();
+  const {language, _} = useContext(LanguageContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +46,7 @@ function ContactMe() {
       className="flex flex-col items-center justify-center h-screen bg-blue-100"
     >
       <h1 className="text-5xl font-bold text-pink-500 my-4" data-aos="fade-up">
-        Contact me
+        {t[language].contact.title}
       </h1>
       <div className="flex justify-center w-full mb-6">
         <div className="h-1 border-b-[2px] border-pastelPink mt-16 w-1/2"></div>
@@ -57,7 +61,7 @@ function ContactMe() {
           htmlFor="from_name"
           className="block font-medium text-primary mb-2"
         >
-          Nom
+          {t[language].contact.name}
         </label>
         <input
           type="text"
@@ -70,7 +74,7 @@ function ContactMe() {
           htmlFor="from_email"
           className="block font-medium text-primary mb-2 mt-4"
         >
-          Email
+          {t[language].contact.email}
         </label>
         <input
           type="email"
@@ -83,7 +87,7 @@ function ContactMe() {
           htmlFor="message"
           className="block font-medium text-primary mb-2 mt-4"
         >
-          Message
+          {t[language].contact.message}
         </label>
         <textarea
           name="message"
@@ -96,7 +100,7 @@ function ContactMe() {
           type="submit"
           className="w-2/3 mt-8 py-4 px-2 mx-auto font-medium border rounded-full bg-pastelPink border-pastelPink hover:transition-all hover:scale-110 hover:border-primary focus:outline-none focus:shadow-outline"
         >
-          Envoyer
+          {t[language].contact.send}
         </button>
       </form>
       <ToastContainer />

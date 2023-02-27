@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import LanguageContext from "../../../language-context";
+import { t } from "../../../text";
+
 export function SmallProjects() {
+  const {language, _} = useContext(LanguageContext);
+
   const site = () => {
     window.open(
       "https://github.com/MolletSimon/All-my-small-projects",
@@ -15,7 +21,7 @@ export function SmallProjects() {
       <h1 className="text-center m-2 text-xl font-semibold">
         All small projects 🖇
       </h1>
-      <p className="text-center">Link to my small projects</p>
+      <p className="text-center">{t[language].works.small.small}</p>
       <div className="font-normal text-xs mt-4 italic flex justify-evenly w-full text-primary flex-wrap">
         <span>@React</span>
         <span>@Tailwind</span>

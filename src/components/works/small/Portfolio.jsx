@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import LanguageContext from "../../../language-context";
+import { t } from "../../../text";
+
 export function Portfolio() {
+  const {language, _} = useContext(LanguageContext);
   const github = () => {
     window.open("https://github.com/MolletSimon/new-portfolio", "_blank");
   };
@@ -16,7 +21,7 @@ export function Portfolio() {
           This website 💼
         </h1>
         <p className="text-center">
-          This portfolio has been designed and built by myself.
+          {t[language].works.small.portfolio}
         </p>
       </div>
       <div className="font-normal text-xs mt-4 italic flex items-center justify-evenly w-full text-primary flex-wrap">
