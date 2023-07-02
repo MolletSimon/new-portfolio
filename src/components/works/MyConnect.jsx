@@ -3,7 +3,7 @@ import LanguageContext from "../../language-context";
 import { t } from "../../text";
 
 export function MyConnect() {
-  const {language, _} = useContext(LanguageContext);
+  const { language, _ } = useContext(LanguageContext);
   const handleClickImage = () => {
     window.open("https://github.com/MolletSimon/my-connect", "_blank");
   };
@@ -35,7 +35,7 @@ export function MyConnect() {
             onClick={handleClickGithub}
           />
         </h2>
-        <div className="p-10 bg-pastelPink rounded-md rounded-l-none shadow-xl">
+        <div className="p-10 hover:scale-110 transition-all rounded-lg rounded-l-none shadow-xl border-pastelPink border-r-2 border-t-2 border-b-2">
           <p className="font-light text-md">
             {t[language].works.myconnect.title} <br />
             {t[language].works.myconnect.desc}

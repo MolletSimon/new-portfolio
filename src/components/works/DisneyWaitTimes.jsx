@@ -3,7 +3,7 @@ import LanguageContext from "../../language-context";
 import { t } from "../../text";
 
 export function DisneyWaitTimes() {
-  const {language, _} = useContext(LanguageContext);
+  const { language, _ } = useContext(LanguageContext);
   const handleClickImage = () => {
     window.open("https://github.com/MolletSimon/Disney-Wait-Times", "_blank");
   };
@@ -28,7 +28,7 @@ export function DisneyWaitTimes() {
             onClick={handleClickGithub}
           />
         </h2>
-        <div className="p-10 bg-pastelBlue rounded-md rounded-r-none shadow-xl">
+        <div className="p-10 hover:scale-110 transition-all border-l-2 border-t-2 border-b-2 border-pastelBlue rounded-lg rounded-r-none shadow-xl">
           <p className="font-light text-md">
             {t[language].works.disneywaittimes.title}
           </p>

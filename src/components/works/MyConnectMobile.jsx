@@ -3,7 +3,7 @@ import LanguageContext from "../../language-context";
 import { t } from "../../text";
 
 export function MyConnectMobile() {
-  const {language, _} = useContext(LanguageContext);
+  const { language, _ } = useContext(LanguageContext);
 
   const handleClickImage = () => {
     window.open("https://github.com/MolletSimon/my-econnect-mobile", "_blank");
@@ -29,13 +29,13 @@ export function MyConnectMobile() {
             onClick={handleClickGithub}
           />
         </h2>
-        <div className="p-10 bg-pastelBlue rounded-md rounded-r-none shadow-xl">
+        <div className="p-10 hover:scale-110 transition-all border-l-2 border-t-2 border-b-2 border-pastelBlue rounded-lg rounded-r-none shadow-xl">
           <p className="font-light text-md">
             {t[language].works.myconnectmobile.title} <br />
             {t[language].works.myconnectmobile.desc}
           </p>
         </div>
-        <div className="font-normal text-xs p-4 italic flex justify-evenly w-full text-primary flex-wrap">
+        <div className="font-normal text-xs p-4 italic text-primary border-pastelBlue flex justify-evenly w-full flex-wrap">
           <p>@Flutter</p>
           <p>@Express.js</p>
           <p>@MongoDB</p>

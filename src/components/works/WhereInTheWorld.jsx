@@ -3,7 +3,7 @@ import LanguageContext from "../../language-context";
 import { t } from "../../text";
 
 export function WhereInTheWorld() {
-  const {language, setLanguage} = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContext);
 
   const handleClickImage = () => {
     window.open("https://whereintheworld.online", "_blank");
@@ -38,8 +38,8 @@ export function WhereInTheWorld() {
             onClick={handleClickGithub}
           />
         </h2>
-        <div className="p-10 bg-pastelPink rounded-md rounded-l-none shadow-xl">
-          <p className="font-light text-md">
+        <div className="p-10 hover:scale-110 transition-all rounded-lg rounded-l-none shadow-xl border-pastelPink border-r-2 border-t-2 border-b-2">
+          <p className="font-light text-md italic">
             {t[language].works.witw.title} 🎮. 
             <br />
             {t[language].works.witw.desc}
