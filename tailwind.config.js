@@ -2,11 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./src/**/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      primary: "#925E78",
-      pastelPink: "#F0E5EA",
-      pastelBlue: "#C9EEFD",
-    },
     letterSpacing: {
       tightest: "-.075em",
       tighter: "-.05em",
@@ -18,6 +13,11 @@ module.exports = {
       widest: ".2em",
     },
     extend: {
+      colors: {
+        primary: "#925E78",
+        pastelPink: "#F0E5EA",
+        pastelBlue: "#C9EEFD",
+      },
       fontSize: {
         nav: "16px",
         title: "54px",

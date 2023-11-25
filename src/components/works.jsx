@@ -9,9 +9,11 @@ import { WhereInTheWorld } from "./works/WhereInTheWorld";
 import { useContext } from "react";
 import LanguageContext from "../language-context";
 import { t } from "../text";
+import { OnGoal } from "./works/OnGoal";
+import { OnGoalWeb } from "./works/OnGoalWeb";
 
 export default function Works() {
-  const {language, setLanguage} = useContext(LanguageContext)
+  const { language, setLanguage } = useContext(LanguageContext);
   return (
     <div className="w-full min-h-screen" id="works">
       <div className="h-1"></div>
@@ -21,6 +23,8 @@ export default function Works() {
       >
         {t[language].works.project}
       </h1>
+      <OnGoalWeb />
+      <OnGoal />
       <WhereInTheWorld />
       <MyConnectMobile />
       <MyConnect />

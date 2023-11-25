@@ -9,6 +9,11 @@ export default function Experience() {
   const [corp, setCorp] = useState(0);
   const { language, _ } = useContext(LanguageContext);
 
+  const selectCorp = (corp) => {
+    console.log(corp);
+    setCorp(corp);
+  };
+
   const experiences = t[language].experiences;
   return (
     <div className="w-full mb-10" id="experiences">
@@ -23,8 +28,8 @@ export default function Experience() {
         <div className="h-1 border-b-[2px] border-pastelPink mt-16 w-1/2"></div>
       </div>
       <div className="flex w-full justify-center mt-16" data-aos="fade-up-left">
-        <div className="grid grid-cols-10 grid-rows-10 lg:w-1/2">
-          <div className="row-span-full col-span-3 border-l-2 border-l-pastelPink">
+        <div className="sm:grid sm:grid-cols-10 sm:grid-rows-10 lg:w-1/2">
+          <div className="sm:block hidden row-span-full col-span-3 border-l-2 border-l-pastelPink">
             <div
               onClick={() => setCorp(0)}
               className={`hover:bg-pastelPink cursor-pointer ${
@@ -70,6 +75,18 @@ export default function Experience() {
             >
               Overspeed
             </div>
+          </div>
+          <div className="w-full flex justify-center text-xl mb-6 sm:hidden">
+            <select
+              onChange={(e) => selectCorp(e.target.value)}
+              className="border border-b-4 border-pastelPink block w-full rounded-lg p-2 mx-2"
+            >
+              <option value={0}>Matmut</option>
+              <option value={1}>Attineos</option>
+              <option value={2}>Econocom</option>
+              <option value={3}>Digiworks</option>
+              <option value={4}>Overspeed</option>
+            </select>
           </div>
           <div className="row-span-full col-span-7 ml-6">
             <h2 className="font-semibold text-lg">{experiences[corp].job}</h2>

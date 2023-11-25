@@ -8,7 +8,7 @@ import { t } from "../text";
 
 function ContactMe() {
   const form = useRef();
-  const {language, _} = useContext(LanguageContext);
+  const { language, _ } = useContext(LanguageContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -43,9 +43,9 @@ function ContactMe() {
   return (
     <div
       id="contact"
-      className="flex flex-col items-center justify-center h-screen bg-blue-100"
+      className="flex flex-col items-center justify-center h-screen"
     >
-      <h1 className="text-5xl font-bold text-pink-500 my-4" data-aos="fade-up">
+      <h1 className="text-5xl font-bold my-4" data-aos="fade-up">
         {t[language].contact.title}
       </h1>
       <div className="flex justify-center w-full mb-6">

@@ -102,11 +102,24 @@ export const t = {
         desc: "The idea came out following a challenge on Frontend Mentor, I developed most of the application from scratch using React for the frontend, Firebase for the backend, Figma for the design and Tailwind for the CSS integration",
       },
       myconnect: {
+        name: "My Connect",
         title:
           "My Connect is a web application targeting a group of people. It aims to organise events bringing together young adults (called Connect).",
         desc: "The idea of the application is to help the organization with a feed where people can post content ✉️, a shared calendar 📆, the notion of group, poll etc. The application has been designed and developed to work on Android, iOS, on tablet and smartphone format.",
       },
+      ongoal: {
+        title:
+          "The OnGoal web application is a comprehensive tool tailored for organizing and managing amateur sports tournaments. It empowers users to create tournaments, input match scores, manage venues, and update match information efficiently.",
+        desc: "From setting up new tournaments to maintaining match details, OnGoal streamlines the entire process for sports enthusiasts.",
+      },
+      ongoalmobile: {
+        name: "On Goal Mobile ⚽︎ - WIP",
+        title:
+          "OnGoal is an application designed to streamline tournament management. Users can effortlessly access their teams, view scores, standings, match schedules, and various tournament-related details.",
+        desc: "From tracking team performance to staying updated on upcoming matches, OnGoal provides a comprehensive platform for managing and engaging with tournaments effectively.",
+      },
       myconnectmobile: {
+        name: "My Connect Mobile",
         title:
           "My Connect is a mobile application 📱 developed for a group of people that organized event that assemble young adults (named Connect).",
         desc: "The idea of the application is to help the organization with a feed where people can posts content ✉️, a shared calendar 📆, the notion of group, poll etc. The application has been thought, designed and developed to work on Android, iOS, on tablet and smartphone format.",
@@ -242,6 +255,12 @@ export const t = {
         title:
           "My Connect est la version web de My Connect. Elle a pour but d'organiser des événements rassemblant des jeunes adultes (appelés Connect).",
         desc: "L'idée de l'application est d'aider l'organisation avec un fil d'actualité où les gens peuvent poster du contenu ✉️, un calendrier partagé 📆, la notion de groupe, sondage etc. L'application a été pensée, conçue et développée pour fonctionner sur Android, iOS, sur format tablette et smartphone.",
+      },
+      ongoalmobile: {
+        name: "On Goal Mobile",
+        title:
+          "OnGoal est une application conçue pour simplifier la gestion des tournois. Les utilisateurs peuvent facilement accéder à leurs équipes, consulter les scores, les classements, les horaires des matchs et divers détails relatifs aux tournois.",
+        desc: "De la performance des équipes à la mise à jour des matchs à venir, OnGoal offre une plateforme complète pour gérer et s'engager efficacement dans les tournois.",
       },
       myconnectmobile: {
         title:
