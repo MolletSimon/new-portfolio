@@ -8,12 +8,12 @@ export function WorkCard({ title, img, text, secondaryText }) {
           alt="Description de l'image"
           className="mx-auto rounded-lg"
         />
-        <div className="absolute mx-auto rounded-lg p-10 text-center inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-90 transition duration-500 ease-in-out opacity-0 hover:opacity-100">
-          <p className="text-white text-lg transition duration-500 ease-in-out">
+        <div className="absolute overflow-scroll p-4 mx-auto rounded-lg text-center inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-90 transition duration-500 ease-in-out opacity-0 hover:opacity-100">
+          <p className="text-white lg:text-lg text-sm transition duration-500 ease-in-out">
             {text}
           </p>
           <br />
-          <p className="text-white text-lg transition duration-500 ease-in-out">
+          <p className="text-white lg:text-lg text-sm transition duration-500 ease-in-out">
             {secondaryText}
           </p>
         </div>

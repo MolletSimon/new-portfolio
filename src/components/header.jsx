@@ -53,7 +53,7 @@ export default function Header() {
         </a>
       </nav>
 
-      <div className="block lg:hidden mr-10 mt-10">
+      <div className="block lg:hidden mt-10 z-50">
         <button
           onClick={() => setMenuOpened(!menuOpened)}
           className="text-2xl mr-10"
